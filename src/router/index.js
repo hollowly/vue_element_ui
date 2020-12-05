@@ -5,8 +5,8 @@ const layoutANDcontainer = () => import('../components/layoutANDcontainer')
 const formANDcard = () => import('../components/formANDcard')
 const iconANDbutton = () => import('../components/iconANDbutton')
 const form = () =>import('../components/form')
-// import
-
+const table = () =>import("../components/table")
+const formOrder = () =>import('../components/formOrder')
 
 Vue.use(VueRouter)
 
@@ -30,6 +30,14 @@ const routes = [
 	{
 		path:'/form',
 		component:form
+	},
+	{
+		path:"/table",
+		component:table
+	},
+	{
+		path:'/formOrder',
+		component:formOrder
 	}
 ]
 

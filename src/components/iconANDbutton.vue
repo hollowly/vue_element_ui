@@ -2,7 +2,7 @@
 <template>
 	<div>
 		<h1>图标按钮icon-button</h1>
-	<el-row type='flex' justify="center">
+		<el-row type='flex' justify="center">
 		<el-col :span="12">
 			<el-card class="box-card">
 				<div>
