@@ -1,8 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+const layoutANDcontainer = () => import('../components/layoutANDcontainer')
+const login = () => import('../components/login')
+// import
 
-import layoutANDcontainer from '../components/layoutANDcontainer'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -13,6 +16,10 @@ const routes = [
 	{
 		path:'/layoutANDcontainer',
 		component:layoutANDcontainer
+	},
+	{
+		path:'/login',
+		component:login
 	}
 ]
 
