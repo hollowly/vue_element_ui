@@ -2,7 +2,7 @@
 <template>
 	<div>
 		<h1>布局容器layout-and-container</h1>
-		<el-row :gutter="20">
+		<el-row type='flex' justify="center">
 			<!-- 左 -->
 			<el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
 			<!-- 中 -->
