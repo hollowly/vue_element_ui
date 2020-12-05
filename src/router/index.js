@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 
 const layoutANDcontainer = () => import('../components/layoutANDcontainer')
 const formANDcard = () => import('../components/formANDcard')
+const iconANDbutton = () => import('../components/iconANDbutton')
+const form = () =>import('../components/form')
 // import
 
 
@@ -20,6 +22,14 @@ const routes = [
 	{
 		path:'/formANDcard',
 		component:formANDcard
+	},
+	{
+		path:'/iconANDbutton',
+		component:iconANDbutton
+	},
+	{
+		path:'/form',
+		components:form
 	}
 ]
 
