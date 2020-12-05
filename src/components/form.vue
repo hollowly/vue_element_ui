@@ -28,53 +28,30 @@
 
 				<div class="block">
 				<!-- <span class="demonstration"></span> -->
-				<el-cascader
-					expand-trigger="hover"
-					:options="options"
-					v-model="selectedOptions2"
-					@change="handleChange">
+				<el-cascader expand-trigger="hover" :options="options" v-model="selectedOptions2" @change="handleChange">
 				</el-cascader>
 				</div>
 
 				<div>
-					<el-switch
-						v-model="value1"
-						active-text="按月付费"
-						inactive-text="按年付费">
-					</el-switch>
-					<el-switch
-						style="display: block"
-						v-model="value2"
-						active-color="#13ce66"
-						inactive-color="#ff4949"
-						active-text="按月付费"
-						inactive-text="按年付费">
+					<el-switch v-model="value1" active-text="按月付费" inactive-text="按年付费"></el-switch>
+					<el-switch style="display: block" v-model="value2" active-color="#13ce66"
+					inactive-color="#ff4949" active-text="按月付费" inactive-text="按年付费">
 					</el-switch>
 				</div>
 
 				<div class="block">
 					<h4>选择天数</h4>
-					<el-slider
-						v-model="value3"
-						:step="10"
-						show-stops>
-					</el-slider>
+					<el-slider v-model="value3" :step="10" show-stops></el-slider>
 				</div>
 
 			  <div class="block">
 					<h4>选择日期</h4>
-					<el-date-picker
-						v-model="value4"
-						type="datetime"
-						placeholder="选择日期时间">
-					</el-date-picker>
+					<el-date-picker v-model="value4" type="datetime" placeholder="选择日期时间"></el-date-picker>
 				</div>
 				
 				<div>
 					<h4>选择头像</h4>
-					<el-upload
-					class="avatar-uploader"
-					action="https://jsonplaceholder.typicode.com/posts/"
+					<el-upload class="avatar-uploader" action="https://jsonplaceholder.typicode.com/posts/"
 					:show-file-list="false"
 					:on-success="handleAvatarSuccess"
 					:before-upload="beforeAvatarUpload">
@@ -85,11 +62,7 @@
 
 				<div>
 					<h4>选择文件</h4>
-					<el-upload
-						class="upload-demo"
-						drag
-						action="https://jsonplaceholder.typicode.com/posts/"
-						multiple>
+					<el-upload class="upload-demo" drag action="https://jsonplaceholder.typicode.com/posts/" multiple>
 						<i class="el-icon-upload"></i>
 						<div class="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>
 						<div class="el-upload__tip" slot="tip">只能上传jpg/png文件，且不超过500kb</div>
@@ -98,10 +71,7 @@
 
 				<div class="block">
 					<h4>评分</h4>
-					<el-rate
-						v-model="value5"
-						:colors="['#99A9BF', '#F7BA2A', '#FF9900']">
-					</el-rate>
+					<el-rate v-model="value5" :colors="['#99A9BF', '#F7BA2A', '#FF9900']"></el-rate>
 				</div>
 
 				<div>
@@ -112,12 +82,8 @@
 
 				<div>
 					<h4>穿梭框</h4>
-					<el-transfer
-						filterable:true
-						:filter-method="filterMethod"
-						filter-placeholder="请输入城市拼音"
-						v-model="value6"
-						:data="data2">
+					<el-transfer filterable:true :filter-method="filterMethod" 
+					filter-placeholder="请输入城市拼音" v-model="value6" :data="data2">
 					</el-transfer>
 				</div>
 

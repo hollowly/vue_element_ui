@@ -9,9 +9,7 @@
 					<el-divider></el-divider>
 					<el-form :model="ValidateForm" ref="ValidateForm" label-width="100px" class="demo-ruleForm">
 						<!-- 账户 -->
-						<el-form-item
-							label="账号"
-							prop="name"
+						<el-form-item label="账号" prop="name"
 							:rules="[
 								{ required: true, message: '账号不能为空'},
 							]"
@@ -20,9 +18,7 @@
 						</el-form-item>
 
 						<!-- 密码 -->
-						<el-form-item
-							label="密码"
-							prop="password"
+						<el-form-item label="密码" prop="password"
 							:rules="[
 								{ required: true, message: '密码不能为空'},
 							]"
@@ -36,13 +32,10 @@
 							<el-radio :label="true">发送给后端</el-radio>
 						</el-radio-group>
 
-						<el-form-item
-								label="后端IP地址"
-								prop='ipp'
+						<el-form-item label="后端IP地址" prop='ipp' v-show='radio'
 								:rules="[
 									{required:true, message:'后端IP不能为空'}
 								]"
-								v-show='radio'
 							>	
 							<el-input v-model="ValidateForm.ipp"></el-input>
 						</el-form-item>
