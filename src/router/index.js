@@ -29,7 +29,7 @@ const routes = [
 	},
 	{
 		path:'/form',
-		components:form
+		component:form
 	}
 ]
 
