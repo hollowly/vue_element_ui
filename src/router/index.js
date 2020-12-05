@@ -1,13 +1,19 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+
+import layoutANDcontainer from '../components/layoutANDcontainer'
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-  },
+		path: '/',
+		// redirect:'/'
+	},
+	{
+		path:'/layoutANDcontainer',
+		component:layoutANDcontainer
+	}
 ]
 
 const router = new VueRouter({

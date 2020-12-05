@@ -1,16 +1,15 @@
 <template>
   <div id="app">
-    <!-- <router-view/> -->
-		<layoutANDcontainer></layoutANDcontainer>
+		<router-link to='/layoutANDcontainer'>layoutANDcontainer</router-link>
+		<hr>
+    <router-view/>
+		<!-- <layoutANDcontainer></layoutANDcontainer> -->
   </div>
 </template>
 
 <script>
-import layoutANDcontainer from './components/layoutANDcontainer'
 export default {
-	components: {
-		layoutANDcontainer,
-	}
+
 }
 </script>
 

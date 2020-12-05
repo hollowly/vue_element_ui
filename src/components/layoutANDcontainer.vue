@@ -1,8 +1,7 @@
 <!--  -->
 <template>
 	<div>
-		<h1>布局容器container</h1>
-		
+		<h1>布局容器layout-and-container</h1>
 		<el-row :gutter="20">
 			<!-- 左 -->
 			<el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
