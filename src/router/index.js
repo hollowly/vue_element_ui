@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 const layoutANDcontainer = () => import('../components/layoutANDcontainer')
-const formANDcard = () => import('../components/formANDcard')
+const formLogin = () => import('../components/formLogin')
 const iconANDbutton = () => import('../components/iconANDbutton')
 const form = () =>import('../components/form')
 const table = () =>import("../components/table")
@@ -20,8 +20,8 @@ const routes = [
 		component:layoutANDcontainer
 	},
 	{
-		path:'/formANDcard',
-		component:formANDcard
+		path:'/formLogin',
+		component:formLogin
 	},
 	{
 		path:'/iconANDbutton',

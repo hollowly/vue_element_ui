@@ -1,7 +1,7 @@
 <!--  -->
 <template>
 	<div>
-	<h1>表单form-and-card</h1>
+	<h1>表单form-login</h1>
 	<el-row type='flex' justify="center">
 		<el-col :span="6">
 			<el-card class="box-card">
