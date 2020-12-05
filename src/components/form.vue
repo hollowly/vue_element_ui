@@ -413,6 +413,9 @@
 	h1 {
 		text-align: center;
 	}
+	.el-card {
+		border-radius: 20px;
+	}
 	h4 {
 		margin: 10px 0px 10px 0px;
 	}

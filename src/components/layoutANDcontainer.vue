@@ -2,7 +2,7 @@
 <template>
 	<div>
 		<h1>布局容器layout-and-container</h1>
-		<el-row type='flex' justify="center">
+		<el-row class="roww" type='flex' justify="center">
 			<!-- 左 -->
 			<el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
 			<!-- 中 -->
@@ -114,19 +114,14 @@
     color: #333;
     line-height: 60px;
   }
-  
+
   .el-aside {
     color: #333;
 	}
-	
 
-
-	
   .el-row {
     margin-bottom: 20px;
-    &:last-child {
-      margin-bottom: 0;
-    }
+		border-radius: 20px;
   }
   .el-col {
     border-radius: 4px;

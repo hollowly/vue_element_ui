@@ -81,4 +81,7 @@
 	h1 {
 		text-align: center;
 	}
+	.el-card {
+		border-radius: 20px;
+	}
 </style>
