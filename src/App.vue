@@ -7,6 +7,7 @@
 		<router-link to='/form'>form</router-link> <br>
 		<router-link to='/table'>table</router-link> <br>
 		<router-link to='/notice'>notice</router-link> <br>
+		<router-link to='/navigation'>navigation</router-link> <br>
 	<hr>
 
 
