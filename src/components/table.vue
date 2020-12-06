@@ -73,13 +73,8 @@
 		
 					<div class="block">
 						<h3>分页</h3>
-						<el-pagination
-							@size-change="handleSizeChange"
-							@current-change="handleCurrentChange"
-							:current-page.sync="currentPage1"
-							:page-size="10"
-							layout="prev, pager, next, jumper"
-							:total="1000">
+						<el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange"
+							:current-page.sync="currentPage1" :page-size="10" layout="prev, pager, next, jumper" :total="1000">
 						</el-pagination>
 					</div>
 
