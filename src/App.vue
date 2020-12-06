@@ -8,6 +8,7 @@
 		<router-link to='/table'>table</router-link> <br>
 		<router-link to='/notice'>notice</router-link> <br>
 		<router-link to='/navigation'>navigation</router-link> <br>
+		<router-link to='/others'>others</router-link> <br>
 	<hr>
 
 

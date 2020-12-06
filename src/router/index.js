@@ -9,6 +9,7 @@ const table = () =>import("../components/table")
 const formOrder = () =>import('../components/formOrder')
 const notice = () => import('../components/notice')
 const navigation = () =>import('../components/navigation')
+const others = () => import('../components/others')
 
 Vue.use(VueRouter)
 
@@ -48,6 +49,10 @@ const routes = [
 	{
 		path:'/navigation',
 		component:navigation
+	},
+	{
+		path:"/others",
+		component:others
 	}
 ]
 
