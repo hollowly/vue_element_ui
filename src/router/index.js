@@ -7,6 +7,7 @@ const iconANDbutton = () => import('../components/iconANDbutton')
 const form = () =>import('../components/form')
 const table = () =>import("../components/table")
 const formOrder = () =>import('../components/formOrder')
+const notice = () => import('../components/notice')
 
 Vue.use(VueRouter)
 
@@ -38,6 +39,10 @@ const routes = [
 	{
 		path:'/formOrder',
 		component:formOrder
+	},
+	{
+		path:'/notice',
+		component:notice
 	}
 ]
 

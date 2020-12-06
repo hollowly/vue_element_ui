@@ -6,6 +6,7 @@
 		<router-link to='/iconANDbutton'>iconANDbutton</router-link> <br>
 		<router-link to='/form'>form</router-link> <br>
 		<router-link to='/table'>table</router-link> <br>
+		<router-link to='/notice'>notice</router-link> <br>
 	<hr>
 
 
