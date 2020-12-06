@@ -6,6 +6,7 @@
 			<el-col :span='14'>
 				<el-card>
 					<div>
+					<h3>NavMenu</h3>
 						<el-menu :default-active="activeIndex2" class="el-menu-demo" mode="horizontal"
 							@select="handleSelect" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
 							<el-menu-item index="1">处理中心</el-menu-item>
@@ -19,12 +20,12 @@
 						</el-menu>
 					</div>
 
-					<div>
+					<div style="display:flex">
 						<el-col :span="12">
 						<el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen"
 						@close="handleClose" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
 							<el-submenu index="1">
-								<template slot="title">
+								<template slot="title" style="display:block">
 									<i class="el-icon-location"></i>
 									<span>导航一</span>
 								</template>
@@ -53,7 +54,8 @@
 						</el-col>
 					</div>
 
-					<div class="div1">
+					<div>
+						<h3>Tabs</h3>
 						<el-tabs v-model="activeName" @tab-click="handleClick">
 							<el-tab-pane label="用户管理" name="first">用户管理</el-tab-pane>
 							<el-tab-pane label="配置管理" name="second">配置管理</el-tab-pane>
@@ -62,6 +64,25 @@
 						</el-tabs>
 					</div>
 
+					<div>
+						<h3>Breadcrumb</h3>
+						<el-breadcrumb separator-class="el-icon-arrow-right">
+							<el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+							<el-breadcrumb-item>活动管理</el-breadcrumb-item>
+							<el-breadcrumb-item>活动列表</el-breadcrumb-item>
+							<el-breadcrumb-item>活动详情</el-breadcrumb-item>
+						</el-breadcrumb>
+					</div>
+
+					<div>
+						<h3>Steps</h3>
+						<el-steps :space="200" :active="active" finish-status="success">
+							<el-step title="编辑" icon="el-icon-edit"></el-step>
+							<el-step title="保存" icon="el-icon-setting"></el-step>
+							<el-step title="同步" icon="el-icon-upload"></el-step>
+						</el-steps>
+							<el-button style="margin-top: 12px;" @click="next">下一步</el-button>
+					</div>
 
 				</el-card>
 			</el-col>
@@ -75,7 +96,8 @@
       return {
         activeIndex: '1',
 				activeIndex2: '1',
-        activeName: 'second',
+				activeName: 'second',
+				active: 0
       };
     },
     methods: {
@@ -90,6 +112,9 @@
 			},
 			handleClick(tab, event) {
         console.log(tab, event);
+			},
+			 next() {
+        if (this.active++ > 2) this.active = 0;
       }
     }
   }
