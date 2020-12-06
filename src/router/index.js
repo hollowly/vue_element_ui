@@ -53,7 +53,7 @@ const routes = [
 	{
 		path:"/others",
 		component:others
-	}
+	},
 ]
 
 const router = new VueRouter({
