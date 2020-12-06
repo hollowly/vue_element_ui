@@ -18,9 +18,8 @@
 					</el-menu>
 
 					  <el-col :span="12">
-							<h5>自定义颜色</h5>
-							<el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose"
-								background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
+							<el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen"
+							@close="handleClose" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
 								<el-submenu index="1">
 									<template slot="title">
 										<i class="el-icon-location"></i>
@@ -49,6 +48,8 @@
 								</el-menu-item>
 							</el-menu>
 						</el-col>
+
+
 				</el-card>
 			</el-col>
 		</el-row>
