@@ -9,7 +9,7 @@
 	line-height: 21px;
 	font-weight: 600;
 	display: block;
-	width: 132px;
+	width: 140px;
 	border-radius: 7px;
 	padding: 12px 0;
 }
@@ -24,7 +24,7 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	fill: #275EFE;
+	fill: orange;
 }
 .btn > svg circle {
 	transition: .5s ease-out;

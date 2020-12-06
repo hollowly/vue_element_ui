@@ -55,4 +55,8 @@ export default {
 <style scoped>
 @import url('../assets/css/btn.css');
 
+#btnSvg {
+	margin: 20px 0px 20px 20px;
+	float: left;
+}
 </style>
