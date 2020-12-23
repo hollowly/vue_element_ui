@@ -13,11 +13,7 @@
 		</div>
 
 	<hr>
-
-
-
-    <router-view/>
-
+    <router-view />
   </div>
 </template>
 
